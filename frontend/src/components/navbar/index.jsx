@@ -155,23 +155,23 @@ const Navbar = ({ open, setOpen }) => {
                 </div>
               )}
               {isDropdownOpen && (
-                <div className="z-30 absolute right-0 mt-56 w-48 bg-white rounded-md shadow-lg py-2 text-gray-800">
+                <div className="z-30 absolute right-0 mt-48 w-36 bg-secondary_text rounded-md shadow-lg  text-primary_text">
                   <NavLink
                     to="/mybookings"
-                    className="block px-4 py-2 hover:bg-gray-200"
+                    className="block px-4 py-2 hover:bg-shadow"
                     onClick={() => setIsDropdownOpen(false)}
                   >
                     My Bookings
                   </NavLink>
                   <NavLink
                     to="/myprofile"
-                    className="block px-4 py-2 hover:bg-gray-200"
+                    className="block px-4 py-2 hover:bg-shadow"
                     onClick={() => setIsDropdownOpen(false)}
                   >
                     My Profile
                   </NavLink>
                   <button
-                    className="block px-4 py-2 hover:bg-gray-200 w-full text-left"
+                    className="block px-4 py-2 hover:bg-shadow w-full text-left"
                     onClick={handleLogout}
                   >
                     Logout

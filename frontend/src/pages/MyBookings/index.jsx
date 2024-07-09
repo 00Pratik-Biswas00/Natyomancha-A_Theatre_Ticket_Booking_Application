@@ -30,7 +30,7 @@ const MyBookings = () => {
     return <p className="text-center mt-5 text-red-500">Error: {error}</p>;
 
   return (
-    <div className="container mx-auto p-6 bg-background1">
+    <div className="container mx-auto p-6 bg-background1 min-h-screen">
       <h1 className="text-4xl font-montserrat font-bold mb-8 text-center text-primary_text">
         My Bookings
       </h1>

@@ -11,7 +11,7 @@ const ProfileCard = ({ profile, onEditClick, onDeleteClick }) => {
   };
 
   return (
-    <div className="bg-background2 text-primary_text rounded-lg shadow-lg p-8 flex flex-col items-center w-full max-w-lg">
+    <div className="bg-shadow text-primary_text rounded-lg shadow-lg p-8 flex flex-col items-center justify-center w-full max-w-lg">
       {profile.image ? (
         <img
           src={profile.image}
@@ -27,14 +27,6 @@ const ProfileCard = ({ profile, onEditClick, onDeleteClick }) => {
         {profile.name}
       </h2>
       <p className="text-primary_text mb-4 text-center">{profile.email}</p>
-      <p className="text-secondary_text mb-4 text-center">
-        {profile.isSubscriber ? "Subscriber" : "Not a Subscriber"}
-      </p>
-      {!profile.isSubscriber && (
-        <Link to="/subscribe" className="text-highlight mb-4 text-center">
-          Planning to get a subscription? <u>Subscribe Now</u>
-        </Link>
-      )}
       <div className="flex space-x-4">
         <button
           className="border border-highlight text-highlight flex items-center font-semibold p-2 rounded gap-2"

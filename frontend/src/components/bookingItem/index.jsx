@@ -83,7 +83,8 @@ const BookingItem = ({ booking }) => {
           |
           <span>
             {" "}
-            <b>Amount: </b>${booking.totalAmount / 100}
+            <b>Amount: </b>
+            {booking.totalAmount}
           </span>
         </div>
       </div>
