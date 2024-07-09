@@ -1,4 +1,3 @@
-// src/components/AdminShows.jsx
 import React, { useState, useEffect } from "react";
 import ShowAdminCard from "../../components/showAdminCard";
 import ShowModal from "../../components/showModal";
@@ -16,7 +15,38 @@ const AdminShows = () => {
   const GetAllShows = async () => {
     try {
       const response = await axiosInstance.get(`${APIURL}/shows`);
-      setShows(response.data);
+      const shows = response.data;
+
+      // Get the current date and time
+      const currentDate = new Date();
+
+      // Filter shows to only include those that are not past the current date and time
+      const upcomingShows = shows.filter((show) => {
+        // Split the time to get hours and minutes
+        const [hours, minutes] = show.time.split(":");
+
+        // Extract year, month, and day from ISO string date
+        const [year, month, day] = show.date.split("T")[0].split("-");
+
+        // Create a new Date object for the show date and time
+        const showDateTime = new Date(year, month - 1, day, hours, minutes);
+        return showDateTime >= currentDate;
+      });
+
+      // Sort the shows by date in reverse order
+      upcomingShows.sort((a, b) => {
+        const [aYear, aMonth, aDay] = a.date.split("T")[0].split("-");
+        const [aHours, aMinutes] = a.time.split(":");
+        const [bYear, bMonth, bDay] = b.date.split("T")[0].split("-");
+        const [bHours, bMinutes] = b.time.split(":");
+
+        const aDateTime = new Date(aYear, aMonth - 1, aDay, aHours, aMinutes);
+        const bDateTime = new Date(bYear, bMonth - 1, bDay, bHours, bMinutes);
+
+        return bDateTime - aDateTime; // Reverse order
+      });
+
+      setShows(upcomingShows);
     } catch (error) {
       console.error(error);
     } finally {
@@ -39,11 +69,15 @@ const AdminShows = () => {
   };
 
   const handleDeleteClick = async (showId) => {
-    window.confirm("Are you sure you want to delete the show?");
+    const confirmDelete = window.confirm(
+      "Are you sure you want to delete the show?"
+    );
+    if (!confirmDelete) return;
+
     try {
       await axiosInstance.delete(`${APIURL}/shows/${showId}`);
       toast.success("Show deleted successfully!");
-      GetAllShows();
+      GetAllShows(); // Refresh the show list after deletion
     } catch (error) {
       console.error("Error deleting show:", error);
       toast.error("Error deleting show!");
@@ -52,7 +86,7 @@ const AdminShows = () => {
 
   const handleModalClose = () => {
     setModalOpen(false);
-    GetAllShows();
+    GetAllShows(); // Refresh the show list after closing the modal
   };
 
   if (loading) {
@@ -60,10 +94,10 @@ const AdminShows = () => {
   }
 
   return (
-    <div className="container  min-h-screen">
-      <h1 className=" text-xl sm:text-5xl font-bold text-primary_text py-4 font-montserrat">
-        Admin Show Management{" "}
-      </h1>{" "}
+    <div className="container min-h-screen">
+      <h1 className="text-xl sm:text-5xl font-bold text-primary_text py-4 font-montserrat">
+        Admin Show Management
+      </h1>
       <button
         className="bg-highlight hover:bg-highlight_hover text-primary_text font-bold text-xl py-2 px-4 rounded mb-4"
         onClick={handleAddClick}

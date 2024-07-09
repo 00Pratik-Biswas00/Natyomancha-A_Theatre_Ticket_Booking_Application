@@ -12,19 +12,19 @@ import logo from "../../assets/logo/natyomancha_logo.png";
 export const socialHandles = [
   {
     icon: <FaYoutube />,
-    path: "https://www.instagram.com/p/C8eqZdDh-on/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    path: "/social",
   },
   {
     icon: <FaInstagram />,
-    path: "https://www.instagram.com/p/C8eqZdDh-on/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    path: "/social",
   },
   {
     icon: <FaFacebookF />,
-    path: "https://www.instagram.com/p/C8eqZdDh-on/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    path: "/social",
   },
   {
     icon: <FaXTwitter />,
-    path: "https://www.instagram.com/p/C8eqZdDh-on/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    path: "/social",
   },
 ];
 

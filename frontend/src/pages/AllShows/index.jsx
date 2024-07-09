@@ -34,6 +34,19 @@ const AllShows = () => {
         return showDateTime >= currentDate;
       });
 
+      // Sort the shows by date
+      upcomingShows.sort((a, b) => {
+        const [aYear, aMonth, aDay] = a.date.split("T")[0].split("-");
+        const [aHours, aMinutes] = a.time.split(":");
+        const [bYear, bMonth, bDay] = b.date.split("T")[0].split("-");
+        const [bHours, bMinutes] = b.time.split(":");
+
+        const aDateTime = new Date(aYear, aMonth - 1, aDay, aHours, aMinutes);
+        const bDateTime = new Date(bYear, bMonth - 1, bDay, bHours, bMinutes);
+
+        return aDateTime - bDateTime;
+      });
+
       // Set shows and update the loading state after a timeout
       setTimeout(() => {
         setShows(upcomingShows);
