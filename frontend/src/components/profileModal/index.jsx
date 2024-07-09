@@ -17,6 +17,8 @@ const ProfileModal = ({ profile, onClose }) => {
   const [email, setEmail] = useState("");
   const [image, setImage] = useState(null);
   const [imageFile, setImageFile] = useState(null);
+  const [uploadingImage, setUploadingImage] = useState(false);
+
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -83,7 +85,7 @@ const ProfileModal = ({ profile, onClose }) => {
                 type="file"
                 onChange={handleFileInputChange(setImageFile)}
               />
-              <button
+              {/* <button
                 type="button"
                 onClick={handleImageFileUpload(
                   setImage,
@@ -93,6 +95,22 @@ const ProfileModal = ({ profile, onClose }) => {
                 className="bg-highlight hover:bg-highlight_hover text-primary_text px-3 py-2 rounded"
               >
                 Upload
+              </button> */}
+              <button
+                type="button"
+                onClick={() =>
+                  handleImageFileUpload(
+                    setImage,
+                    setImageFile,
+                    setUploadingImage,
+                    imageFile
+                  )
+                }
+                className={
+                  uploadingImage ? "cursor-not-allowed" : "cursor-pointer"
+                }
+              >
+                {uploadingImage ? <u>Uploading...</u> : <u>Upload</u>}
               </button>
             </div>
             {image && (
