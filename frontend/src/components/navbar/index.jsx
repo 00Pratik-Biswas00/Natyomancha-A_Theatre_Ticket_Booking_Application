@@ -13,7 +13,7 @@ import { RiMoonClearLine } from "react-icons/ri";
 import { toast } from "sonner";
 import { switchLoginModalOpen } from "../../store/slices/loginModalOpenSlice";
 
-import logo from "../../assets/logo/chobimancha_logo.png";
+import logo from "../../assets/logo/natyomancha_logo.png";
 
 import { CiMenuFries } from "react-icons/ci";
 import { RxCross2 } from "react-icons/rx";

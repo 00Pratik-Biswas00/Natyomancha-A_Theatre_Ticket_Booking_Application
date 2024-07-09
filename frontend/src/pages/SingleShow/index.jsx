@@ -131,7 +131,7 @@ const SingleShow = () => {
           amount: orderInfo.data.order.amount,
           currency: "INR",
           name: "Pratik Biswas",
-          description: "Booking show seats at Showtime360",
+          description: "Booking show seats at Natyomancha",
           image:
             "https://media.licdn.com/dms/image/D4D03AQE0_ow5zzvszg/profile-displayphoto-shrink_200_200/0/1693571246837?e=2147483647&v=beta&t=xSW__FKRUYzj5ZcbIAMKx-tXIFI1otdvvPqut2nEVT8",
           order_id: orderInfo.data.order.id,

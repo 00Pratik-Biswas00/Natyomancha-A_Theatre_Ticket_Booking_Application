@@ -139,7 +139,7 @@ export const requestPasswordReset = asyncHandler(async (req, res) => {
   const mailOptions = {
     to: user.email,
     from: process.env.TEAM_EMAIL_ADDRESS,
-    subject: "Showtime360: Password Reset Verification Code",
+    subject: "Natyomancha: Password Reset Verification Code",
     text: `Your password reset verification code is ${code}. It is valid for 1 hour.`,
   };
 

@@ -7,7 +7,7 @@ import { IoCall, IoMail } from "react-icons/io5";
 
 import { Link } from "react-router-dom";
 
-import logo from "../../assets/logo/chobimancha_logo.png";
+import logo from "../../assets/logo/natyomancha_logo.png";
 
 export const socialHandles = [
   {
