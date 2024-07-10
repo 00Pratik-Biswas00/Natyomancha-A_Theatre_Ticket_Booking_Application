@@ -18,10 +18,9 @@ import uploadRouter from "./routes/uploadFile.js";
 dotenv.config();
 
 const app = express();
-//   origin: process.env.SITE_URL,
 
 const corsOptions = {
-  origin: "https://ticket-booking-applicati-9ac4e.web.app/",
+  origin: process.env.SITE_URL,
   credentials: true,
   optionsSuccessStatus: 200,
 };
