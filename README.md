@@ -8,13 +8,11 @@ It is a theater ticket booking application, which mainly hosts Bengali theater p
 
 #### Demo video for the users - 
 
-https://github.com/00Pratik-Biswas00/Theatre_Ticket_Booking_Application/assets/114896796/72c076d8-7dd9-4706-9949-0c8e8252e80b
 
 ### The shows, theatres, cineasts will be managed by the admin (Natyomancha)
 
 #### Demo video for the admin (Natyomancha) -
 
-https://github.com/00Pratik-Biswas00/Theatre_Ticket_Booking_Application/assets/114896796/13e4ea59-cfaf-44c7-a32b-9fac954e36b6
 
 ### For the developers - If you want to use this repo, here is the steps - 
 
