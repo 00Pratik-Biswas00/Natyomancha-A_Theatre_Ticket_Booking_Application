@@ -23,6 +23,7 @@ import NotFound from "./pages/NotFound";
 import { Toaster } from "sonner";
 
 import { RiMenuFold2Line, RiMenuUnfold2Line } from "react-icons/ri";
+import ScrollToTop from "./components/ScrollToTop";
 
 const UserLayout = ({ children }) => {
   const [open, setOpen] = useState(true);
@@ -116,6 +117,7 @@ function App() {
             closeButton="true"
           />
           <UserLayout>
+            <ScrollToTop />
             <Routes>
               <Route path="/" element={<AllShows />} />
               <Route path="explore/shows/:slug" element={<SingleShow />} />
