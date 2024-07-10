@@ -46,7 +46,7 @@ cd frontend
 5. On both sides install npm. (Make sure you have downloaded Node)
 
 ```
-npm I
+npm i
 ```
 
 6. You need to add `.env` file. Create your own `.env` file for both backend and frontend, where you must connect Mongodb, firebase, razorpay ids and all..
