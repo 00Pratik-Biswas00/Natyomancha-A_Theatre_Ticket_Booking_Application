@@ -59,7 +59,7 @@ const AdminTheatres = () => {
   }
 
   return (
-    <div className="container mx-auto p-4 min-h-screen">
+    <div className="container mx-auto p-0 sm:p-4 min-h-screen">
       <h1 className=" text-xl sm:text-5xl font-bold text-primary_text py-4 font-montserrat">
         Admin Theatre Management
       </h1>
@@ -69,7 +69,7 @@ const AdminTheatres = () => {
       >
         Add New Theatre
       </button>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 xl:grid-cols-2  gap-4">
         {theatres.map((theatre) => (
           <TheatreAdminCard
             key={theatre._id}

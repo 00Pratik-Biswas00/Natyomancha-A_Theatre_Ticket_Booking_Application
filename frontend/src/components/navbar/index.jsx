@@ -135,7 +135,7 @@ const Navbar = ({ open, setOpen }) => {
         </NavLink>
       </div>
 
-      <div className="hidden lg:flex items-center justify-center space-x-5">
+      <div className="flex items-center justify-center space-x-5">
         <div className="relative flex items-center">
           {user ? (
             <>

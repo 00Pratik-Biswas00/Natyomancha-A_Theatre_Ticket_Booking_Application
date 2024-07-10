@@ -11,7 +11,7 @@ const ProfileCard = ({ profile, onEditClick, onDeleteClick }) => {
   };
 
   return (
-    <div className="bg-shadow text-primary_text rounded-lg shadow-lg p-8 flex flex-col items-center justify-center w-full max-w-lg">
+    <div className="bg-shadow text-primary_text rounded-lg shadow-lg p-8 flex flex-col items-center justify-center w-full max-w-xs sm:max-w-lg">
       {profile.image ? (
         <img
           src={profile.image}

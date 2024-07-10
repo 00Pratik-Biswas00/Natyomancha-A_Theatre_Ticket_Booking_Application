@@ -56,14 +56,14 @@ const CineastModal = ({ cineast, onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-      <div className="bg-white p-8 lg:w-[40%] md:w-[60%] w-full m-4 rounded shadow-lg">
-        <h2 className="text-xl font-bold mb-4">
+    <div className="fixed inset-0 flex items-center justify-center bg-background1 bg-opacity-50">
+      <div className="bg-shadow p-8 lg:w-[40%] md:w-[60%] w-full m-4 rounded shadow-lg">
+        <h2 className="text-2xl text-primary_text font-bold mb-4">
           {cineast ? "Edit Cineast" : "Add New Cineast"}
         </h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label className="block text-gray-700">Name</label>
+            <label className="block text-primary_text">Name</label>
             <input
               className="w-full px-3 py-2 border rounded"
               type="text"
@@ -71,8 +71,8 @@ const CineastModal = ({ cineast, onClose }) => {
               onChange={(e) => setName(e.target.value)}
             />
           </div>
-          <div className="mb-4">
-            <label className="block text-gray-700">Image</label>
+          <div className="mb-4 text-primary_text">
+            <label className="block ">Image</label>
             <div className="flex flex-row justify-between gap-4">
               <input
                 className="w-full px-3 py-2 border rounded"
@@ -113,7 +113,7 @@ const CineastModal = ({ cineast, onClose }) => {
             </div>
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">Details</label>
+            <label className="block text-primary_text">Details</label>
             <textarea
               className="w-full px-3 py-2 border rounded"
               value={details}
@@ -122,7 +122,7 @@ const CineastModal = ({ cineast, onClose }) => {
           </div>
           <div className="flex justify-end">
             <button
-              className="bg-gray-500 text-white py-2 px-4 rounded mr-2"
+              className="bg-gray-500 hover:text-gray-700 text-primary_text px-4 py-2 rounded mr-2 transition-all duration-300 font-bold"
               onClick={onClose}
               type="button"
             >
@@ -130,14 +130,14 @@ const CineastModal = ({ cineast, onClose }) => {
             </button>
             {loading ? (
               <button
-                className="bg-blue-500 text-white py-2 px-4 rounded cursor-not-allowed"
+                className="bg-highlight hover:bg-highlight_hover text-primary_text px-4 py-2 rounded font-bold transition-all duration-300 cursor-not-allowed"
                 type="submit"
               >
                 Saving...
               </button>
             ) : (
               <button
-                className="bg-blue-500 text-white py-2 px-4 rounded"
+                className="bg-highlight hover:bg-highlight_hover text-primary_text px-4 py-2 rounded font-bold transition-all duration-300"
                 type="submit"
               >
                 Save

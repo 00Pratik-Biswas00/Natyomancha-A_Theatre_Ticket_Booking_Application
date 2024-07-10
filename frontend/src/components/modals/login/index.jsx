@@ -43,7 +43,7 @@ const LoginModal = ({ onSignUpClick, onForgotPassClick }) => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm transition-opacity duration-300">
-      <div className="bg-background2 text-primary_text p-6 rounded-lg shadow-lg w-full max-w-md transform transition-transform duration-300 scale-105">
+      <div className="bg-shadow text-primary_text p-6 rounded-lg shadow-lg w-full max-w-md transform transition-transform duration-300 scale-105">
         <h2 className="text-2xl font-montserrat font-bold mb-4">Login</h2>
         <div className="flex mb-4">
           <button

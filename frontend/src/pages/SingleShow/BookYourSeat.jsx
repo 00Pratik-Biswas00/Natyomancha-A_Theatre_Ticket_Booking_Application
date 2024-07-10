@@ -1,7 +1,5 @@
 import React from "react";
-import stageImg from "../../assets/theatreImages/stage1.jpg";
-import exitGate from "../../assets/theatreImages/exit.png";
-import bgtheatre from "../../assets/theatreImages/bgtheatre.jpg";
+
 import { useMediaQuery } from "react-responsive";
 
 import bgleft from "../../assets/theatreImages/bgleft1.png";

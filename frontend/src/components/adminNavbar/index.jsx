@@ -96,9 +96,9 @@ const AdminNavSidebar = ({ open }) => {
                 Manage Theatres
               </NavLink>
             </li>
-            <li className="mb-2">
+            <li className="mb-2" onClick={handleLogout}>
               <NavLink className="block px-4 py-2 hover:bg-gray-700 rounded text-center">
-                <button onClick={handleLogout}>Logout</button>
+                <button>Logout</button>
               </NavLink>
             </li>
           </ul>

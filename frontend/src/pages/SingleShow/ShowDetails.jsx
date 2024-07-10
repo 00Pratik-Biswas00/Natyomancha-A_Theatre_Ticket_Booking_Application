@@ -1,5 +1,4 @@
 import React from "react";
-import hamlet_poster from "../../assets/theatreImages/hamlet.png";
 import { FaLocationDot, FaClock, FaCalendarDay } from "react-icons/fa6";
 
 const ShowDetails = ({ show }) => {
