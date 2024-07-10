@@ -2,7 +2,7 @@
 
 ## Celebal Technologies - React JS Summer Internship Final Project
 
-It is a theater ticket booking application mainly hosts Bengali theater productions. My website Natyamancha, will help users to buy tickets for Bengali plays performed in Kolkata.
+It is a theatre ticket booking application that mainly hosts Bengali theatre productions. My website Natyamancha, will help users to buy tickets for Bengali plays performed in Kolkata.
 
 ### For the users - see the video below to know how to use it.
 
@@ -43,19 +43,14 @@ cd backend
 cd frontend
 ```
 
+
 5. On both sides install npm. (Make sure you have downloaded Node)
 
 ```
 npm i
 ```
 
-6. You need to add `.env` file. Create your own `.env` file for both backend and frontend, where you must connect Mongodb, firebase, razorpay ids and all..
-7. Run `npm start` in the backend terminal, and `npm run dev` in the frontend terminal.
-
-Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
-
-
-You can check [thirdbell.in](https://www.thirdbell.in/). It is the current bengali theatre ticket booking website.
+You can check [thirdbell.in](https://www.thirdbell.in/). It is the current Bengali theatre ticket booking website.
 
 
 
