@@ -5,7 +5,7 @@ import axiosInstance from "../../config/axiosInstance";
 import ProfileModal from "../../components/profileModal";
 import ProfileCard from "../../components/profileCard";
 
-const APIURL = "http://localhost:5000/api";
+const APIURL = import.meta.env.VITE_API_URL;
 
 const MyProfile = () => {
   const [modalOpen, setModalOpen] = useState(false);

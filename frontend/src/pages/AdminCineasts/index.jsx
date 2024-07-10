@@ -5,7 +5,7 @@ import CineastAdminCard from "../../components/cineastAdminCard";
 import CineastModal from "../../components/cineastModal";
 import { toast } from "sonner";
 
-const APIURL = "http://localhost:5000/api";
+const APIURL = import.meta.env.VITE_API_URL;
 
 const AdminCineasts = () => {
   const [cineasts, setCineasts] = useState([]);

@@ -4,7 +4,7 @@ import TheatreAdminCard from "../../components/theatreAdminCard";
 import TheatreModal from "../../components/theatreModal";
 import axiosInstance from "../../config/axiosInstance";
 
-const APIURL = "http://localhost:5000/api";
+const APIURL = import.meta.env.VITE_API_URL;
 
 const AdminTheatres = () => {
   const [theatres, setTheatres] = useState([]);

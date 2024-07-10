@@ -12,7 +12,7 @@ const SignUpModal = ({ isOpen, onClose, onLoginClick }) => {
   const [imageUploading, setImageUploading] = useState(false);
   const [error, setError] = useState(false);
 
-  const APIURL = "http://localhost:5000/api";
+  const APIURL = import.meta.env.VITE_API_URL;
 
   const handleImageFileUpload = async (imageFile) => {
     if (imageFile) {

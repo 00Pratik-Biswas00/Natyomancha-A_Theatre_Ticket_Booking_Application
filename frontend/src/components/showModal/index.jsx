@@ -7,7 +7,7 @@ import {
 } from "../../utils/fileHandler";
 import { MdDeleteForever } from "react-icons/md";
 
-const APIURL = "http://localhost:5000/api";
+const APIURL = import.meta.env.VITE_API_URL;
 
 const ShowModal = ({ show, onClose }) => {
   const [title, setTitle] = useState("");

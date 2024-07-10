@@ -8,7 +8,7 @@ const MyBookings = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const APIURL = "http://localhost:5000/api";
+  const APIURL = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
     const fetchBookings = async () => {

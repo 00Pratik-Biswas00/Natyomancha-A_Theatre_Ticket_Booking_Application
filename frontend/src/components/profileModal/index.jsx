@@ -10,7 +10,7 @@ import {
   handleImageFileUpload,
 } from "../../utils/fileHandler";
 
-const APIURL = "http://localhost:5000/api";
+const APIURL = import.meta.env.VITE_API_URL;
 
 const ProfileModal = ({ profile, onClose }) => {
   const [name, setName] = useState("");

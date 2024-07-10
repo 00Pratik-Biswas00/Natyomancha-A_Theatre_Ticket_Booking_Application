@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import axiosInstance from "../../config/axiosInstance";
 import { toast } from "sonner";
 
-const APIURL = "http://localhost:5000/api";
+const APIURL = import.meta.env.VITE_API_URL;
 
 const TheatreModal = ({ theatre, onClose }) => {
   const [name, setName] = useState("");

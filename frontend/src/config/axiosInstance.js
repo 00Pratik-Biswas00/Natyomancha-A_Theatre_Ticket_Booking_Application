@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { logoutUser } from "../store/slices/userSlice.js";
 
-const APIURL = "http://localhost:5000/api";
+const APIURL = import.meta.env.VITE_API_URL;
 
 const axiosInstance = axios.create({
   baseURL: `${APIURL}`,
