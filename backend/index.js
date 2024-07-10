@@ -19,11 +19,11 @@ dotenv.config();
 
 const app = express();
 
-const corsOptions = {
-  origin: process.env.SITE_URL,
-  credentials: true,
-  optionsSuccessStatus: 200,
-};
+// const corsOptions = {
+//   origin: process.env.SITE_URL,
+//   credentials: true,
+//   optionsSuccessStatus: 200,
+// };
 // app.use(cors(corsOptions));
 app.use(
   cors({
