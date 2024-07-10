@@ -50,7 +50,9 @@ cd frontend
 npm i
 ```
 
-You can check [thirdbell.in](https://www.thirdbell.in/). It is the current Bengali theatre ticket booking website.
+#### Now check the individual README.md file for frontend and backend folder!
+
+### You can check [thirdbell.in](https://www.thirdbell.in/). It is the current Bengali theatre ticket booking website.
 
 
 
