@@ -43,13 +43,6 @@ cd backend
 cd frontend
 ```
 
-
-5. On both sides install npm. (Make sure you have downloaded Node)
-
-```
-npm i
-```
-
 #### Now check the individual README.md file for the frontend and backend folder!
 
 ### You can check [thirdbell.in](https://www.thirdbell.in/). It is the current Bengali theatre ticket booking website.
