@@ -1,8 +1,20 @@
-# React + Vite
+# After entering the frontend folder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Install npm
+```
+npm i
+```
 
-Currently, two official plugins are available:
+2. 6. You need to add `.env` file. Create your own `.env` file, where you have to connect - 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+VITE_API_URL=
+VITE_RAZORPAY_KEY_ID=
+VITE_RAZORPAY_PLAN_ID=
+```
+
+3. Start the frontend -
+
+```
+npm run dev
+```
