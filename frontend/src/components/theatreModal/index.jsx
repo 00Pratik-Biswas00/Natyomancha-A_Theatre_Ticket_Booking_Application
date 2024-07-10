@@ -59,7 +59,7 @@ const TheatreModal = ({ theatre, onClose }) => {
               Theatre Name
             </label>
             <input
-              className="w-full px-3 py-2 border rounded"
+              className=" px-4 gap-x-3 w-full py-2 border border-primary_text  text-primary_text bg-shadow rounded-lg  focus:outline-none focus:border focus:border-highlight "
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -70,7 +70,7 @@ const TheatreModal = ({ theatre, onClose }) => {
               Owner Name
             </label>
             <input
-              className="w-full px-3 py-2 border rounded"
+              className=" px-4 gap-x-3 w-full py-2 border border-primary_text  text-primary_text bg-shadow rounded-lg  focus:outline-none focus:border focus:border-highlight "
               type="text"
               value={owner}
               onChange={(e) => setOwner(e.target.value)}
@@ -81,7 +81,7 @@ const TheatreModal = ({ theatre, onClose }) => {
               Address
             </label>
             <input
-              className="w-full px-3 py-2 border rounded"
+              className=" px-4 gap-x-3 w-full py-2 border border-primary_text  text-primary_text bg-shadow rounded-lg  focus:outline-none focus:border focus:border-highlight "
               type="text"
               value={address}
               onChange={(e) => setAddress(e.target.value)}
@@ -92,7 +92,7 @@ const TheatreModal = ({ theatre, onClose }) => {
               Phone
             </label>
             <input
-              className="w-full px-3 py-2 border rounded"
+              className=" px-4 gap-x-3 w-full py-2 border border-primary_text  text-primary_text bg-shadow rounded-lg  focus:outline-none focus:border focus:border-highlight "
               type="text"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}

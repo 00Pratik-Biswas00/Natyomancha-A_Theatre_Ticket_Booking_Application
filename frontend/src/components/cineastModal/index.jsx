@@ -65,7 +65,7 @@ const CineastModal = ({ cineast, onClose }) => {
           <div className="mb-4">
             <label className="block text-primary_text">Name</label>
             <input
-              className="w-full px-3 py-2 border rounded"
+              className=" px-4 gap-x-3 w-full py-2 border border-primary_text  text-primary_text bg-shadow rounded-lg  focus:outline-none focus:border focus:border-highlight "
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -75,7 +75,7 @@ const CineastModal = ({ cineast, onClose }) => {
             <label className="block ">Image</label>
             <div className="flex flex-row justify-between gap-4">
               <input
-                className="w-full px-3 py-2 border rounded"
+                className=" px-4 gap-x-3 w-full py-2 border border-primary_text  text-primary_text bg-shadow rounded-lg  focus:outline-none focus:border focus:border-highlight "
                 type="file"
                 onChange={(e) => setImageFile(e.target.files[0])}
               />
@@ -115,7 +115,7 @@ const CineastModal = ({ cineast, onClose }) => {
           <div className="mb-4">
             <label className="block text-primary_text">Details</label>
             <textarea
-              className="w-full px-3 py-2 border rounded"
+              className=" px-4 gap-x-3 w-full py-2 border border-primary_text  text-primary_text bg-shadow rounded-lg  focus:outline-none focus:border focus:border-highlight "
               value={details}
               onChange={(e) => setDetails(e.target.value)}
             />

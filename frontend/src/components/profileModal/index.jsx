@@ -60,7 +60,7 @@ const ProfileModal = ({ profile, onClose }) => {
           <div className="mb-4">
             <label className="block text-secondary_text mb-1">Name</label>
             <input
-              className="w-full px-3 py-2 border rounded bg-background1 text-primary_text"
+              className=" px-4 gap-x-3 w-full py-2 border border-primary_text  text-primary_text bg-shadow rounded-lg  focus:outline-none focus:border focus:border-highlight  bg-background1 text-primary_text"
               type="text"
               value={name}
               onChange={handleInputChange(setName)}
@@ -69,7 +69,7 @@ const ProfileModal = ({ profile, onClose }) => {
           <div className="mb-4">
             <label className="block text-secondary_text mb-1">Email</label>
             <input
-              className="w-full px-3 py-2 border rounded bg-background1 text-primary_text"
+              className=" px-4 gap-x-3 w-full py-2 border border-primary_text  text-primary_text bg-shadow rounded-lg  focus:outline-none focus:border focus:border-highlight  bg-background1 text-primary_text"
               type="email"
               value={email}
               onChange={handleInputChange(setEmail)}
@@ -81,7 +81,7 @@ const ProfileModal = ({ profile, onClose }) => {
             </label>
             <div className="flex items-center space-x-3">
               <input
-                className="w-full px-3 py-2 border rounded bg-background1 text-primary_text"
+                className=" px-4 gap-x-3 w-full py-2 border border-primary_text  text-primary_text bg-shadow rounded-lg  focus:outline-none focus:border focus:border-highlight  bg-background1 text-primary_text"
                 type="file"
                 onChange={handleFileInputChange(setImageFile)}
               />

@@ -135,7 +135,7 @@ const ShowModal = ({ show, onClose }) => {
           <div className="mb-4">
             <label className="block text-primary_text">Title</label>
             <input
-              className="w-full px-3 py-2 border rounded"
+              className=" px-4 gap-x-3 w-full py-2 border border-primary_text  text-primary_text bg-shadow rounded-lg  focus:outline-none focus:border focus:border-highlight "
               type="text"
               value={title}
               onChange={handleInputChange(setTitle)}
@@ -145,7 +145,7 @@ const ShowModal = ({ show, onClose }) => {
           <div className="mb-4">
             <label className="block text-primary_text">Description</label>
             <textarea
-              className="w-full px-3 py-2 border rounded"
+              className=" px-4 gap-x-3 w-full py-2 border border-primary_text  text-primary_text bg-shadow rounded-lg  focus:outline-none focus:border focus:border-highlight "
               value={description}
               onChange={handleInputChange(setDescription)}
             />
@@ -156,7 +156,7 @@ const ShowModal = ({ show, onClose }) => {
               <div className="mb-4">
                 <label className="block text-primary_text">Poster</label>
                 <input
-                  className="w-full px-3 py-2 border rounded"
+                  className=" px-4 gap-x-3 w-full py-2 border border-primary_text  text-primary_text bg-shadow rounded-lg  focus:outline-none focus:border focus:border-highlight "
                   type="file"
                   onChange={handleFileInputChange(setPosterFile)}
                 />
@@ -199,7 +199,7 @@ const ShowModal = ({ show, onClose }) => {
           <div className="mb-4">
             <label className="block text-primary_text">Language</label>
             <input
-              className="w-full px-3 py-2 border rounded"
+              className=" px-4 gap-x-3 w-full py-2 border border-primary_text  text-primary_text bg-shadow rounded-lg  focus:outline-none focus:border focus:border-highlight "
               type="text"
               value={language}
               onChange={handleInputChange(setLanguage)}
@@ -209,7 +209,7 @@ const ShowModal = ({ show, onClose }) => {
           <div className="mb-4">
             <label className="block text-primary_text">Date</label>
             <input
-              className="w-full px-3 py-2 border rounded"
+              className=" px-4 gap-x-3 w-full py-2 border border-primary_text  text-primary_text bg-shadow rounded-lg  focus:outline-none focus:border focus:border-highlight "
               type="date"
               value={date}
               onChange={handleInputChange(setDate)}
@@ -219,7 +219,7 @@ const ShowModal = ({ show, onClose }) => {
           <div className="mb-4">
             <label className="block text-primary_text">Time</label>
             <input
-              className="w-full px-3 py-2 border rounded"
+              className=" px-4 gap-x-3 w-full py-2 border border-primary_text  text-primary_text bg-shadow rounded-lg  focus:outline-none focus:border focus:border-highlight "
               type="time"
               value={time}
               onChange={handleInputChange(setTime)}
@@ -233,7 +233,7 @@ const ShowModal = ({ show, onClose }) => {
                 Front Stall
               </label>
               <input
-                className="w-full px-3 py-2 border rounded"
+                className=" px-4 gap-x-3 w-full py-2 border border-primary_text  text-primary_text bg-shadow rounded-lg  focus:outline-none focus:border focus:border-highlight "
                 type="number"
                 value={frontStall}
                 onChange={handleInputChange(setFrontStall)}
@@ -244,7 +244,7 @@ const ShowModal = ({ show, onClose }) => {
                 Rear Stall
               </label>
               <input
-                className="w-full px-3 py-2 border rounded"
+                className=" px-4 gap-x-3 w-full py-2 border border-primary_text  text-primary_text bg-shadow rounded-lg  focus:outline-none focus:border focus:border-highlight "
                 type="number"
                 value={rearStall}
                 onChange={handleInputChange(setRearStall)}
@@ -253,7 +253,7 @@ const ShowModal = ({ show, onClose }) => {
             <div className="mb-4">
               <label className="block text-primary_text text-sm">Balcony</label>
               <input
-                className="w-full px-3 py-2 border rounded"
+                className=" px-4 gap-x-3 w-full py-2 border border-primary_text  text-primary_text bg-shadow rounded-lg  focus:outline-none focus:border focus:border-highlight "
                 type="number"
                 value={balcony}
                 onChange={handleInputChange(setBalcony)}
@@ -264,7 +264,7 @@ const ShowModal = ({ show, onClose }) => {
           <div className="mb-4">
             <label className="block text-primary_text">Theatre</label>
             <select
-              className="w-full px-3 py-2 border rounded"
+              className=" px-4 gap-x-3 w-full py-2 border border-primary_text  text-primary_text bg-shadow rounded-lg  focus:outline-none focus:border focus:border-highlight "
               value={selectedTheatre}
               onChange={handleInputChange(setSelectedTheatre)}
             >
@@ -285,7 +285,7 @@ const ShowModal = ({ show, onClose }) => {
                   name="person"
                   value={cast.person}
                   onChange={handleArrayChange(index, casts, setCasts)}
-                  className="w-full px-3 py-2 border rounded mr-2"
+                  className=" px-4 gap-x-3 w-full py-2 border border-primary_text  text-primary_text bg-shadow rounded-lg  focus:outline-none focus:border focus:border-highlight  mr-2"
                 >
                   <option value="">Select a cineast</option>
                   {cineasts.map((cineast) => (
@@ -298,7 +298,7 @@ const ShowModal = ({ show, onClose }) => {
                   name="role"
                   value={cast.role}
                   onChange={handleArrayChange(index, casts, setCasts)}
-                  className="w-full px-3 py-2 border rounded"
+                  className=" px-4 gap-x-3 w-full py-2 border border-primary_text  text-primary_text bg-shadow rounded-lg  focus:outline-none focus:border focus:border-highlight "
                   type="text"
                   placeholder="Role"
                 />
@@ -328,7 +328,7 @@ const ShowModal = ({ show, onClose }) => {
                   name="person"
                   value={crew.person}
                   onChange={handleArrayChange(index, crews, setCrews)}
-                  className="w-full px-3 py-2 border rounded mr-2"
+                  className=" px-4 gap-x-3 w-full py-2 border border-primary_text  text-primary_text bg-shadow rounded-lg  focus:outline-none focus:border focus:border-highlight  mr-2"
                 >
                   <option value="">Select a cineast</option>
                   {cineasts.map((cineast) => (
@@ -341,7 +341,7 @@ const ShowModal = ({ show, onClose }) => {
                   name="role"
                   value={crew.role}
                   onChange={handleArrayChange(index, crews, setCrews)}
-                  className="w-full px-3 py-2 border rounded"
+                  className=" px-4 gap-x-3 w-full py-2 border border-primary_text  text-primary_text bg-shadow rounded-lg  focus:outline-none focus:border focus:border-highlight "
                   type="text"
                   placeholder="Role"
                 />
