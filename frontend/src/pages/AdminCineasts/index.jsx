@@ -5,7 +5,7 @@ import CineastAdminCard from "../../components/cineastAdminCard";
 import CineastModal from "../../components/cineastModal";
 import { toast } from "sonner";
 
-const APIURL = import.meta.env.VITE_API_URL;
+const APIURL = "https://theatre-ticket-booking-application.onrender.com";
 
 const AdminCineasts = () => {
   const [cineasts, setCineasts] = useState([]);

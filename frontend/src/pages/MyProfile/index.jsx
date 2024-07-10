@@ -5,7 +5,7 @@ import axiosInstance from "../../config/axiosInstance";
 import ProfileModal from "../../components/profileModal";
 import ProfileCard from "../../components/profileCard";
 
-const APIURL = import.meta.env.VITE_API_URL;
+const APIURL = "https://theatre-ticket-booking-application.onrender.com";
 
 const MyProfile = () => {
   const [modalOpen, setModalOpen] = useState(false);

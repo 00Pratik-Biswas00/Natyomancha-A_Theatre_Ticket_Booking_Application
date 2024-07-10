@@ -12,7 +12,7 @@ const SignUpModal = ({ isOpen, onClose, onLoginClick }) => {
   const [imageUploading, setImageUploading] = useState(false);
   const [error, setError] = useState(false);
 
-  const APIURL = import.meta.env.VITE_API_URL;
+  const APIURL = "https://theatre-ticket-booking-application.onrender.com";
 
   const handleImageFileUpload = async (imageFile) => {
     if (imageFile) {

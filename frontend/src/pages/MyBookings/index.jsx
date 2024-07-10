@@ -8,7 +8,7 @@ const MyBookings = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const APIURL = import.meta.env.VITE_API_URL;
+  const APIURL = "https://theatre-ticket-booking-application.onrender.com";
 
   useEffect(() => {
     const fetchBookings = async () => {

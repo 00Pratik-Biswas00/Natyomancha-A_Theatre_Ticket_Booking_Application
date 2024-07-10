@@ -10,7 +10,7 @@ import {
   handleImageFileUpload,
 } from "../../utils/fileHandler";
 
-const APIURL = import.meta.env.VITE_API_URL;
+const APIURL = "https://theatre-ticket-booking-application.onrender.com";
 
 const ProfileModal = ({ profile, onClose }) => {
   const [name, setName] = useState("");

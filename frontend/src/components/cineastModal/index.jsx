@@ -8,7 +8,7 @@ import {
 } from "../../utils/fileHandler";
 import { MdDeleteForever } from "react-icons/md";
 
-const APIURL = import.meta.env.VITE_API_URL;
+const APIURL = "https://theatre-ticket-booking-application.onrender.com";
 
 const CineastModal = ({ cineast, onClose }) => {
   const [name, setName] = useState("");
