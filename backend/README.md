@@ -1,4 +1,4 @@
-# After entering the frontend folder
+# After entering the backend folder
 
 1. Install dependencies -
 ```
