@@ -7,7 +7,7 @@ import {
 } from "../../utils/fileHandler";
 import { MdDeleteForever } from "react-icons/md";
 
-const APIURL = "https://theatre-ticket-booking-application.onrender.com";
+const APIURL = "http://localhost:5000/api";
 
 const ShowModal = ({ show, onClose }) => {
   const [title, setTitle] = useState("");

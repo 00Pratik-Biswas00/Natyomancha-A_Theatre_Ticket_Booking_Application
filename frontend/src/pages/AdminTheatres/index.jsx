@@ -4,7 +4,7 @@ import TheatreAdminCard from "../../components/theatreAdminCard";
 import TheatreModal from "../../components/theatreModal";
 import axiosInstance from "../../config/axiosInstance";
 
-const APIURL = "https://theatre-ticket-booking-application.onrender.com";
+const APIURL = "http://localhost:5000/api";
 
 const AdminTheatres = () => {
   const [theatres, setTheatres] = useState([]);

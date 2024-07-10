@@ -12,7 +12,7 @@ const SignUpModal = ({ isOpen, onClose, onLoginClick }) => {
   const [imageUploading, setImageUploading] = useState(false);
   const [error, setError] = useState(false);
 
-  const APIURL = "https://theatre-ticket-booking-application.onrender.com";
+  const APIURL = "http://localhost:5000/api";
 
   const handleImageFileUpload = async (imageFile) => {
     if (imageFile) {

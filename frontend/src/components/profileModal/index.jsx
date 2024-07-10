@@ -10,7 +10,7 @@ import {
   handleImageFileUpload,
 } from "../../utils/fileHandler";
 
-const APIURL = "https://theatre-ticket-booking-application.onrender.com";
+const APIURL = "http://localhost:5000/api";
 
 const ProfileModal = ({ profile, onClose }) => {
   const [name, setName] = useState("");

@@ -4,7 +4,7 @@ import axios from "axios";
 import SkeletonAllShow from "../../components/Skeletons/skeletonAllShow";
 import { FaSearch, FaFilter, FaTimes } from "react-icons/fa";
 
-const APIURL = "https://theatre-ticket-booking-application.onrender.com";
+const APIURL = "http://localhost:5000/api";
 
 const AllShows = () => {
   const [shows, setShows] = useState([]);

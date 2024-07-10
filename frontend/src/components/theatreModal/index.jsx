@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import axiosInstance from "../../config/axiosInstance";
 import { toast } from "sonner";
 
-const APIURL = "https://theatre-ticket-booking-application.onrender.com";
+const APIURL = "http://localhost:5000/api";
 
 const TheatreModal = ({ theatre, onClose }) => {
   const [name, setName] = useState("");

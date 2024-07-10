@@ -24,7 +24,7 @@ const SingleShow = () => {
   const [show, setShow] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const APIURL = "https://theatre-ticket-booking-application.onrender.com";
+  const APIURL = "http://localhost:5000/api";
   const razorpayKey = import.meta.env.VITE_RAZORPAY_KEY_ID;
 
   const user = useSelector((state) => state.user.userInfo);

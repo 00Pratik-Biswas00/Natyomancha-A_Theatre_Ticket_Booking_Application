@@ -20,7 +20,7 @@ dotenv.config();
 const app = express();
 
 const corsOptions = {
-  origin: "https://theatre-ticket-booking-application-58am.onrender.com",
+  origin: process.env.SITE_URL,
   credentials: true,
   optionsSuccessStatus: 200,
 };
