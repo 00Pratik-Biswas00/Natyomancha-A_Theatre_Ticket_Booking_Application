@@ -98,6 +98,7 @@ function App() {
       {user?.isAdmin ? (
         <>
           <Toaster richColors position="top-right" closeButton="true" />
+          <ScrollToTop />
           <AdminLayout>
             <Routes>
               <Route exact path="/cineasts" element={<AdminCineasts />} />
