@@ -5,7 +5,6 @@ import SkeletonAllShow from "../../components/Skeletons/skeletonAllShow";
 import { FaSearch, FaFilter, FaTimes } from "react-icons/fa";
 
 const APIURL = "https://theatre-ticket-booking-application.onrender.com";
-
 const AllShows = () => {
   const [shows, setShows] = useState([]);
   const [localLoading, setLocalLoading] = useState(true);

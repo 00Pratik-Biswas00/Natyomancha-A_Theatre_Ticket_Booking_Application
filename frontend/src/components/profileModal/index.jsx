@@ -11,7 +11,6 @@ import {
 } from "../../utils/fileHandler";
 
 const APIURL = "https://theatre-ticket-booking-application.onrender.com";
-
 const ProfileModal = ({ profile, onClose }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");

@@ -9,7 +9,6 @@ const MyBookings = () => {
   const [error, setError] = useState(null);
 
   const APIURL = "https://theatre-ticket-booking-application.onrender.com";
-
   useEffect(() => {
     const fetchBookings = async () => {
       try {

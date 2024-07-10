@@ -6,7 +6,6 @@ import CineastModal from "../../components/cineastModal";
 import { toast } from "sonner";
 
 const APIURL = "https://theatre-ticket-booking-application.onrender.com";
-
 const AdminCineasts = () => {
   const [cineasts, setCineasts] = useState([]);
   const [loading, setLoading] = useState(true);

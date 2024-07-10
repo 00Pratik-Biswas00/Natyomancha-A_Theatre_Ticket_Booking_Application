@@ -8,7 +8,6 @@ import {
 import { MdDeleteForever } from "react-icons/md";
 
 const APIURL = "https://theatre-ticket-booking-application.onrender.com";
-
 const ShowModal = ({ show, onClose }) => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");

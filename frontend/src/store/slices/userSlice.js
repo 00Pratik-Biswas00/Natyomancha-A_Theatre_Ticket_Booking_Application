@@ -2,7 +2,6 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axiosInstance from "../../config/axiosInstance.js";
 
 const APIURL = "https://theatre-ticket-booking-application.onrender.com";
-
 const getUserFromLocalStorage = () => {
   const user = localStorage.getItem("user");
   return user ? JSON.parse(user) : null;
