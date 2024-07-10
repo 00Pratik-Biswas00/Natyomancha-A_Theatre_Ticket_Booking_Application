@@ -6,6 +6,7 @@ import ProfileModal from "../../components/profileModal";
 import ProfileCard from "../../components/profileCard";
 
 const APIURL = "https://theatre-ticket-booking-application.onrender.com";
+
 const MyProfile = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const user = useSelector((state) => state.user.userInfo);

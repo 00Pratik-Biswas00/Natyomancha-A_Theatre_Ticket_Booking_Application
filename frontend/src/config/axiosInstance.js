@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { logoutUser } from "../store/slices/userSlice.js";
 
 const APIURL = "https://theatre-ticket-booking-application.onrender.com";
+
 const axiosInstance = axios.create({
   baseURL: `${APIURL}`,
 });

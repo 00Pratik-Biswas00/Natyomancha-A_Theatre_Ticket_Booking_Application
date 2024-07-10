@@ -4,6 +4,7 @@ import axiosInstance from "../../config/axiosInstance";
 import { toast } from "sonner";
 
 const APIURL = "https://theatre-ticket-booking-application.onrender.com";
+
 const TheatreModal = ({ theatre, onClose }) => {
   const [name, setName] = useState("");
   const [owner, setOwner] = useState("");

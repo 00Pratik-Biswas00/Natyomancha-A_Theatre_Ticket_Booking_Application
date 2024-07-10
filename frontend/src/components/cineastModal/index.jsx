@@ -9,6 +9,7 @@ import {
 import { MdDeleteForever } from "react-icons/md";
 
 const APIURL = "https://theatre-ticket-booking-application.onrender.com";
+
 const CineastModal = ({ cineast, onClose }) => {
   const [name, setName] = useState("");
   const [imageFile, setImageFile] = useState();
