@@ -16,7 +16,7 @@
 
 /* important to change the date picker color */
 
-/* ::-webkit-calendar-picker-indicator {
+::-webkit-calendar-picker-indicator {
   filter: invert(1);
   cursor: pointer;
-} */
+}
