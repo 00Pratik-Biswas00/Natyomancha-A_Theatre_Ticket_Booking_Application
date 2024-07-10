@@ -1,6 +1,6 @@
 # After entering the frontend folder
 
-1. Install npm
+1. Install dependencies -
 ```
 npm i
 ```
